@@ -42,5 +42,11 @@ namespace WindowsAppPeliculas
 
             MessageBox.Show(DacPelicula.Insertar(new Pelicula(txtNombre.Text, dateFechaEstreno.Value, Convert.ToInt32(txtDuracion.Text), txtIdioma.Text, txtSinopsis.Text, genero, clasificacion)));
         }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            
+            gridPeliculas.DataSource = DacPelicula.Listar();
+        }
     }
 }

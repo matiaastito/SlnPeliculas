@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibPeliculas
+namespace LibPeliculas.Models
 {
     public class Pelicula
     {
@@ -21,6 +21,8 @@ namespace LibPeliculas
             Genero = genero;
             Clasificacion = clasificacion;
         }
+
+        public Pelicula() { }
         #endregion
 
 
@@ -32,6 +34,8 @@ namespace LibPeliculas
         public int CantidadMinutos { get; set; }
         public string Idioma { get; set; }
         public string Sinopsis { get; set; }
+        public int GeneroId { get; set; }
+        public int ClasificacionId { get; set; }
 
         
 

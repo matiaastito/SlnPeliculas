@@ -16,7 +16,8 @@ namespace Datos.ManejoDatos
 
         public static List<Pelicula> Listar()
         {
-            return context.Peliculas.ToList();
+            List<Pelicula> lisPeliculas = context.Peliculas.ToList();
+            return lisPeliculas;
         }
         public static string Insertar(Pelicula pelicula) 
         {
